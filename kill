@@ -1,0 +1,3 @@
+select 'alter system kill session '''||sid||','||serial#||',@'||inst_id||''' immediate;' as script from gv$session where username='UMDM01' and status='INACTIVE';
+select 'alter system kill session '''||sid||','||serial#||',@'||inst_id||''' immediate;' as script from gv$session where sql_id='9faq2uuqh6fx5';
+select 'alter system kill session '''||sid||','||serial#||',@'||inst_id||''' immediate;' as script from gv$session where machine like 'ceaubatprd%';
